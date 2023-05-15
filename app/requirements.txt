@@ -1,8 +1,7 @@
-opencv-python
 mrcnn==0.2
 numpy==1.18.5
 tensorflow==1.14.0
-flask==2.0.0
+flask==1.1.2
 scikit-image==0.16.2
 keras==1.2.0
 requests==2.25.0
