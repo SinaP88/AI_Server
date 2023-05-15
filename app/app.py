@@ -321,7 +321,7 @@ def detectToothRoot():
 if __name__ == '__main__':
     from waitress import serve
 
-    # app.run(debug=False, host='0.0.0.0', port='8000')
+    app.run(debug=False, host='0.0.0.0', port='8000')
     # app.run(debug=True)
     logging.info(" Server is running ...")
-    serve(app, host='0.0.0.0', port='8000')
+    # serve(app, host='0.0.0.0', port='8000')
