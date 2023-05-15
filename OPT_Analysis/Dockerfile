@@ -3,4 +3,4 @@ COPY . /opt_app
 WORKDIR /opt_app
 RUN pip install -r requirements.txt
 EXPOSE 8000
-CMD ["python", "/opt_app/app"]
+CMD ["waitress-serve", "--call CoreApi:app"]
