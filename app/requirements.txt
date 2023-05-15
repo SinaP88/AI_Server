@@ -1,3 +1,4 @@
+opencv_python==4.0.1
 mrcnn==0.2
 numpy==1.18.5
 tensorflow==1.14.0
