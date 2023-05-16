@@ -1,5 +1,4 @@
 version: "3.6"
-
 services:
   opt_analysis:
     container_name: opt_analysis
