@@ -8,8 +8,7 @@ temp/
 test/
 result/
 images/
-model/
-models/
+
 **static/images/
 
 # Byte-compiled / optimized / DLL files
