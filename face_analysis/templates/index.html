@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Face Analysis</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" type="image/vnd.microsoft.icon" href='static/images/favicon.ico'>
+</head>
+
+<body style="background: #252525;">
+ <div>
+	<h1>Face Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+ <!--
+     <form action="{{ url_for('test_method')}}"method="post">
+    	<input type="text" name="input array" placeholder="input array" required="required" />
+        <input type="text" name="predicted face" placeholder="predicted face" required="required" />
+		<input type="text" name="predicted points" placeholder="predicted points"  />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+     </form>
+ -->
+        <form action="http://dev1.orcadent.de:9421/predict" method="post">
+            <label for="image-id">Image</label>
+            <br>
+                <!--  name is the key that will be send to the server-->
+                <input type="text" id="image-id" name="image" value="put your base64 image here"> <br><br>
+                <!--  <label for="bar">Bar</label>-->
+                <!--  <input type="text" id="bar" name="bar"><br><br>-->
+                <button type="submit" class="btn btn-primary btn-block btn-large" value="Submit">Submit</button>
+                <!--  <input type="submit" value="Submit"> -->
+        </form>
+   <br>
+   <br>
+   <div class="result">
+        <label for="result">Result</label>
+        <br>
+        <h4>{{ points }}</h4>
+   </div>
+
+ </div>
+</body>
+</html>

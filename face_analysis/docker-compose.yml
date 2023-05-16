@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  opt_analysis:
+    container_name: face_analysis
+    image: sinaparchami/face_analysis
+    ports:
+      - "5000:5000"
+    build:
+      context: .
+      dockerfile: Dockerfile
