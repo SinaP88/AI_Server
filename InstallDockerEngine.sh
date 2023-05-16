@@ -6,7 +6,7 @@ sudo apt install net-tools -y
 sudo apt-get install cmake g++ -y
 sudo apt install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6 -y
 # Uninstall any such older versions before attempting to install a new version:
-sudo apt-get remove docker docker-engine docker.io containerd runc
+# sudo apt-get remove docker docker-engine docker.io containerd runc
 ## Set up the repository
 # Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 sudo apt-get update
