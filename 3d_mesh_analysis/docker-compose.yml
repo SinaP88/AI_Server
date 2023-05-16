@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  opt_analysis:
+    container_name: 3d_mesh_analysis
+    image: sinaparchami/3d_mesh_analysis
+    ports:
+      - "7000:7000"
+    build:
+      context: .
+      dockerfile: Dockerfile
