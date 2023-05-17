@@ -1,8 +1,7 @@
 FROM python:3.8
 COPY . .
-WORKDIR .
-RUN pip install -r requirements.txt
 WORKDIR ./model
+RUN pip install -r requirements.txt
 RUN sh ./build.sh
 WORKDIR .
 EXPOSE 3000
