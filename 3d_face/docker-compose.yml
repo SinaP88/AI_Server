@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  opt_analysis:
+    container_name: 3d_face
+    image: sinaparchami/3d_face
+    ports:
+      - "3000:3000"
+    build:
+      context: .
+      dockerfile: Dockerfile
