@@ -4,6 +4,5 @@ numpy==1.19.5
 tqdm==4.56.2
 argparse
 cython
-importlib==1.0.4
 flask
 waitress
