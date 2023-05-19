@@ -1,13 +1,13 @@
+opencv-python==4.0.1.24
 matplotlib
 numpy
-opencv-python # cv2
 imageio
 imageio-ffmpeg
-pyyaml # yaml
+pyyaml
 tqdm
 argparse
 cython
-scikit-image # skimage
+scikit-image
 scipy
 onnxruntime
 gradio
