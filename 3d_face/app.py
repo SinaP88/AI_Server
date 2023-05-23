@@ -141,7 +141,7 @@ def predict3D():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port='3000')
+    app.run(host='0.0.0.0', port='3000', debug=False)
     # app.run()
     # img = cv2.imread('static/img.jpg', cv2.IMREAD_COLOR)
     # predict_ply(img)
