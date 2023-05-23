@@ -1,6 +1,7 @@
 FROM python:3.6
 COPY . .
 WORKDIR .
+RUN apt-get update && apt-get install -y libglib2.0-0 libgl1-mesa-glx && rm -rf /var/lib/apt/lists/*
 RUN apk add --no-cache gcc musl-dev linux-headers
 RUN pip3 install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir -r requirements.txt
