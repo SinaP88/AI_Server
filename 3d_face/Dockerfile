@@ -9,5 +9,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN sh ./build.sh
 RUN pip cache info
 RUN pip cache purge
+RUN echo $PATH
 EXPOSE 3000
 CMD ["flask", "run", "--host=0.0.0.0", "--port=3000"]
