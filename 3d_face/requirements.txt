@@ -9,5 +9,6 @@ argparse
 cython
 scikit-image
 scipy
+Flask
 onnxruntime
 gradio
