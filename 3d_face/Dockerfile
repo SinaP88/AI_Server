@@ -1,7 +1,6 @@
 FROM python:3.6-slim-stretch
 COPY . .
 WORKDIR .
-RUN apt-get -y update
 RUN apt-get install -y --fix-missing \
     build-essential \
     cmake \
