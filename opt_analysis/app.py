@@ -319,7 +319,7 @@ def detectToothRoot():
     return json.dumps(teeth_data, cls=NumpyArrayEncoder)
 
 if __name__ == '__main__':
-    from waitress import serve
+    # from waitress import serve
 
     app.run(debug=False, host='0.0.0.0', port='8000')
     # app.run(debug=True)
