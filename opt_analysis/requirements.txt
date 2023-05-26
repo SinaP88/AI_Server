@@ -6,7 +6,6 @@ scikit-image==0.16.2
 keras==2.0.8
 requests==2.25.0
 matplotlib==3.3.2
-sklearn==0.0
 scikit-learn
 flask
 waitress

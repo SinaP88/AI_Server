@@ -141,6 +141,6 @@ if __name__ == "__main__":
     testImagePath = "static/images/JB.jpg"
     # visualize_original_image(testImagePath)
     # postTestImageJson(testImagePath=testImagePath)
-    postTestImageMultiDict(testImagePath=testImagePath)
+    postTestImageMultiDict(url='http://192.168.178.65:8000/detect', testImagePath=testImagePath)
     # postTestImageMultiDict(url="http://dev1.orcadent.de:9423/detect", testImagePath=testImagePath)
     # postTestImageMultiDict(url="https://tai-opt10.orcadent.de/detect", testImagePath=testImagePath)
