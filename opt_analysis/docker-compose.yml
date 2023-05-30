@@ -4,7 +4,7 @@ services:
     container_name: opt_analysis
     image: sinaparchami/opt_analysis
     ports:
-      - "8000:8000"
+      - "7000:7000"
     build:
       context: .
       dockerfile: Dockerfile

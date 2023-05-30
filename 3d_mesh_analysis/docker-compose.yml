@@ -4,7 +4,7 @@ services:
     container_name: 3d_mesh_analysis
     image: sinaparchami/3d_mesh_analysis
     ports:
-      - "7000:7000"
+      - "8000:8000"
     build:
       context: .
       dockerfile: Dockerfile
